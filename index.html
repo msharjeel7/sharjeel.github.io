@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Sharjeel</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="grid-overlay"></div>
+
+    <!-- NAVBAR -->
+    <nav class="nav-menu">
+        <!-- LOGO - LEFT SIDE -->
+        <div class="logo" onclick="document.querySelector('#home').scrollIntoView({ behavior: 'smooth' })">
+            Muhammad Sharjeel
+        </div>
+
+        <!-- NAV LINKS - RIGHT SIDE (DESKTOP) -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- HAMBURGER MENU (MOBILE) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="hero">
+            <h1>Multimodal AI Researcher</h1>
+            <p class="expertise">Signal Processing, Computer Vision, LLMs</p>
+            <p class="description">Transforming complex data into intelligent solutions through cutting-edge research in
+                signal processing, computer vision, and large language models.</p>
+            <a href="#projects" class="cta-button">Explore My Work</a>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Electrical Engineering graduate with research experience in advanced signal processing for 4D
+                        flow MRI. I am passionate about developing innovative approaches that connect theoretical
+                        research with practical applications.</p> <br>
+                    <p>My current focus is on multimodal AI, exploring the integration of signal processing, computer
+                        vision, and large language models to build intelligent and impactful systems.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Signal Processing</h3>
+                        <p>Research in advanced methods for 4D cardiac flow MRI reconstruction, complex data analysis,
+                            and optimization of reconstruction algorithms for improved medical imaging.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Computer Vision</h3>
+                        <p>Development of robust image processing pipelines, object detection frameworks, and visual
+                            understanding systems using YOLO and other state-of-the-art techniques.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Large Language Models</h3>
+                        <p>Working with transformer-based architectures, fine-tuning, and instruction-following systems
+                            to develop intelligent applications powered by LLMs.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Research & Development</h3>
+                        <p>Published research at ESMRMB 2025 on 4D flow MRI, focusing on optimization of reconstruction
+                            algorithms, GPU-accelerated processing, and advanced visualization and quantification of
+                            blood flow dynamics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/slice_10.gif" alt="❤️📊🩺">
+                    </div>
+                    <div class="project-content">
+                        <h3>4D Cardiac Flow MRI Reconstruction</h3>
+                        <p>Pioneered advanced algorithms for 4D cardiac flow MRI, enhancing cardiovascular diagnostics with anomaly-resilient reconstruction and GPU-accelerated processing.</p>
+                        <div class="project-tags">
+                            <span class="tag">Reconstruction</span>
+                            <span class="tag">Signal Processing</span>
+                            <span class="tag">MRI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/t2_t1.png" alt="🧠🔄📡">
+                    </div>
+                    <div class="project-content">
+                        <h3>GAN-based T1-T2 MRI Conversion</h3>
+                        <p>Developed a CycleGAN model to seamlessly convert T1–T2 MRI sequences, optimizing scan efficiency and improving patient outcomes.</p>
+                        <div class="project-tags">
+                            <span class="tag">GANs</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Medical Imaging</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/val_batch2_pred.jpg" alt="🛠️🔍📷">
+                    </div>
+                    <div class="project-content">
+                        <h3>YOLO-based PCB Defect Detection</h3>
+                        <p>Engineered a real-time defect detection system for printed circuit boards using a YOLO architecture, improving manufacturing quality control.</p>
+                        <div class="project-tags">
+                            <span class="tag">YOLO</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Manufacturing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/multi_modal_ai.jpg" alt="📸🛩️🤖">
+                    </div>
+                    <div class="project-content">
+                        <h3>Multimodal AI Systems</h3>
+                        <p>Integrating AI solutions combining multiple data modalities for comprehensive analysis and decision-making in complex environments.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vision Language Navigation</span>
+                            <span class="tag">Multimodal AI</span>
+                            <span class="tag">Autonomous Vehicles</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <p>Interested in collaborating on AI research projects or discussing innovative solutions? I'd love to
+                    hear from you!</p>
+                <div class="contact-links">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sharjeelmuhammad472@gmail.com"
+                        target="_blank" class="contact-link">Email Me</a>
+
+                    <a href="https://www.linkedin.com/in/muhammad-sharjeel-853613252" class="contact-link"
+                        target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+                    <a href="https://github.com/msharjeel7" class="contact-link" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- COPYRIGHT FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 <span class="highlight">Muhammad Sharjeel</span>. All rights reserved. Designed with passion for
+            AI & Innovation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
