@@ -186,3 +186,4 @@ document.querySelectorAll('section').forEach(section => {
 // Initialize particles
 init();
 animate();
+document.getElementById("year").textContent = new Date().getFullYear();
