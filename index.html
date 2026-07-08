@@ -26,7 +26,9 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
@@ -43,7 +45,9 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
@@ -67,38 +71,52 @@
                     <p>Multimodal AI researcher with hands-on experience in Signal Processing, Computer Vision, and NLP, grounded in a strong Electrical Engineering foundation. Proficient in building and deploying end-to-end ML pipelines using PyTorch, FastAPI, and Docker, with additional expertise in Edge AI deployment on resource-constrained hardware. </p> <br>
                     <p>Experienced in Vision-Language Models, Generative AI, and real-time intelligent surveillance systems. Passionate about building intelligent systems that create measurable impact in the real world.</p>
                 </div>
+            </div>
+        </section>
 
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>Programming Languages</h3>
-                        <p>Proficient in Python and MATLAB for research, data analysis, and algorithm development, with strong command of C and C++ for systems-level programming. Additionally experienced with JavaScript for web scripting, SQL for database querying, and Bash for task automation and Linux workflows.</p>
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <img src="images/ncai_logo.png" alt="NCAI Logo" class="timeline-logo">
                     </div>
-
-                    <div class="skill-card">
-                        <h3>Machine Learning & Deep Learning</h3>
-                        <p>Hands-on experience with PyTorch and TensorFlow for training Vision-Language models, GANs, and CNN architectures. Skilled in Scikit-Learn for classical ML, NumPy and Pandas for data processing, and Hugging Face for accessing and experimenting with pretrained models.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Computer Vision</h3>
-                        <p>Built CV systems using OpenCV for image processing, Torchvision for model training, and Ultralytics YOLO for real-time object detection and multi-object tracking. Experienced with DeepStream and GStreamer for multi-stream video analytics pipelines.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Generative AI & Agentic Systems</h3>
-                        <p>Exploring RAG pipelines and agentic workflows using LangChain and LangGraph, with ChromaDB as vector store for knowledge retrieval. Familiar with n8n for workflow automation and building LLM-powered applications.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>MLOps & Edge AI</h3>
-                        <p>Deployed inference services using FastAPI and Flask, containerized with Docker, and hosted on AWS EC2 and GCP. Experienced with ONNX Runtime for cross-platform model inference and TensorRT for optimized deployment on edge devices including Jetson Nano and Raspberry Pi. Familiar with GitHub Actions for version control workflows.</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Research and Development</h3>
-                        <p>Published at ESMRMB 2025 (Springer) on 4D cardiac flow MRI reconstruction, covering GPU-accelerated signal processing, advanced reconstruction algorithms, and quantitative blood flow analysis. Currently researching deep learning-based Network Intrusion Detection systems.</p>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>National Center of Artificial Intelligence (NCAI)</h3>
+                            <span class="timeline-date">Dec 2025 – Mar 2026</span>
+                        </div>
+                        <p class="timeline-role">Research Assistant | <a href="https://ncaipk.com" target="_blank" rel="noopener noreferrer">ncaipk.com</a> · Islamabad, Pakistan</p>
+                        <ul class="timeline-list">
+                            <li>Developed <strong>Smart-Eye-AI</strong>, a real-time intelligent surveillance system implementing <strong>YOLO-based intrusion detection</strong> with <strong>multi-object tracking</strong> and custom polyline boundary-crossing logic to detect and flag unauthorized zone entry</li>
+                            <li>Built a <strong>real-time facial recognition attendance system</strong> using <strong>ArcFace/InsightFace</strong> embeddings with cosine similarity matching, and implemented custom <strong>fire and smoke detection</strong> models for safety monitoring</li>
+                            <li>Explored <strong>DeepStream</strong> and <strong>GStreamer</strong> pipelines for real-time multi-stream video analytics architecture during system design research</li>
+                        </ul>
                     </div>
                 </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <img src="images/miprg_logo.png" alt="MIPRG Logo" class="timeline-logo">
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Medical Image Processing Research Group (MIPRG)</h3>
+                            <span class="timeline-date">Mar 2024 – Jun 2025</span>
+                        </div>
+                        <p class="timeline-role">Undergraduate Researcher | <a href="https://miprg.comsats.edu.pk" target="_blank" rel="noopener noreferrer">miprg.comsats.edu.pk</a> · Islamabad, Pakistan</p>
+                        <ul class="timeline-list">
+                            <li>Designed a <strong>reconstruction algorithm</strong> resilient to anomalous k-space data, improving <strong>cardiovascular flow imaging</strong> accuracy</li>
+                            <li>Applied <strong>statistical modeling</strong> with IQR and binning to suppress anomalies while maintaining interpretability</li>
+                            <li>Implemented <strong>adaptive soft-thresholding</strong> to reduce artifacts while preserving anatomical flow structures</li>
+                            <li>Built a <strong>MATLAB pipeline</strong> with <strong>GPU acceleration (RTX 4090)</strong>, achieving up to <strong>44x speedup</strong></li>
+                            <li>Extracted the <strong>aorta</strong>, visualized <strong>blood flow patterns</strong>, and performed quantitative <strong>4D flow MRI analysis</strong> with clinical collaborators</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -200,6 +218,161 @@
             </div>
         </section>
 
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills">
+            <h2 class="section-title">Skills</h2>
+            <p class="skills-intro">Click a node to explore the toolkit behind it.</p>
+
+            <div class="skills-network">
+                <div class="skills-nodes">
+                    <button class="skill-node active" type="button" data-target="prog">
+                        <span class="node-badge">
+                            <span class="node-icon icon-programming"></span>
+                        </span>
+                        <span class="node-label">Programming</span>
+                    </button>
+                    <button class="skill-node" type="button" data-target="ml">
+                        <span class="node-badge">
+                            <span class="node-icon icon-ai-ml"></span>
+                        </span>
+                        <span class="node-label">AI / Machine Learning</span>
+                    </button>
+                    <button class="skill-node" type="button" data-target="cv">
+                        <span class="node-badge">
+                            <span class="node-icon icon-cv"></span>
+                        </span>
+                        <span class="node-label">Computer Vision</span>
+                    </button>
+                    <button class="skill-node" type="button" data-target="genai">
+                        <span class="node-badge">
+                            <span class="node-icon icon-genai"></span>
+                        </span>
+                        <span class="node-label">Generative AI & Automation</span>
+                    </button>
+                    <button class="skill-node" type="button" data-target="backend">
+                        <span class="node-badge">
+                            <span class="node-icon icon-backend"></span>
+                        </span>
+                        <span class="node-label">Backend Development</span>
+                    </button>
+                    <button class="skill-node" type="button" data-target="mlops">
+                        <span class="node-badge">
+                            <span class="node-icon icon-mlops"></span>
+                        </span>
+                        <span class="node-label">MLOps & Deployment</span>
+                    </button>
+                    <button class="skill-node" type="button" data-target="edge">
+                        <span class="node-badge">
+                            <span class="node-icon icon-edge"></span>
+                        </span>
+                        <span class="node-label">Edge AI & Optimization</span>
+                    </button>
+                    <button class="skill-node" type="button" data-target="net">
+                        <span class="node-badge">
+                            <span class="node-icon icon-net"></span>
+                        </span>
+                        <span class="node-label">Networking</span>
+                    </button>
+                    <button class="skill-node" type="button" data-target="soft">
+                        <span class="node-badge">
+                            <span class="node-icon icon-soft"></span>
+                        </span>
+                        <span class="node-label">Soft Skills</span>
+                    </button>
+                </div>
+
+                <div class="skills-panel">
+                    <span class="skills-panel-arrow"></span>
+
+                    <div class="skills-panel-inner active" data-panel="prog">
+                        <div class="panel-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">MATLAB</span>
+                            <span class="tag">C</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Bash</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-panel-inner" data-panel="ml">
+                        <div class="panel-tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Scikit-Learn</span>
+                            <span class="tag">Hugging Face</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Pandas</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-panel-inner" data-panel="cv">
+                        <div class="panel-tags">
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Torchvision</span>
+                            <span class="tag">Ultralytics</span>
+                            <span class="tag">DeepStream</span>
+                            <span class="tag">GStreamer</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-panel-inner" data-panel="genai">
+                        <div class="panel-tags">
+                            <span class="tag">LangChain</span>
+                            <span class="tag">RAG</span>
+                            <span class="tag">n8n</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-panel-inner" data-panel="backend">
+                        <div class="panel-tags">
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-panel-inner" data-panel="mlops">
+                        <div class="panel-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">AWS (EC2)</span>
+                            <span class="tag">GCP</span>
+                            <span class="tag">GitHub Actions</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-panel-inner" data-panel="edge">
+                        <div class="panel-tags">
+                            <span class="tag">Jetson Nano</span>
+                            <span class="tag">Raspberry Pi</span>
+                            <span class="tag">TensorRT</span>
+                            <span class="tag">ONNX</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-panel-inner" data-panel="net">
+                        <div class="panel-tags">
+                            <span class="tag">IP Addressing</span>
+                            <span class="tag">VLSM</span>
+                            <span class="tag">Routing</span>
+                            <span class="tag">VLANs</span>
+                            <span class="tag">DHCP</span>
+                            <span class="tag">ACLs</span>
+                            <span class="tag">Linux Networking</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-panel-inner" data-panel="soft">
+                        <div class="panel-tags">
+                            <span class="tag">Research Methodologies</span>
+                            <span class="tag">Technical Documentation</span>
+                            <span class="tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- CONTACT SECTION -->
         <section id="contact" class="contact">
             <h2 class="section-title">Let's Connect</h2>
@@ -220,7 +393,7 @@
             </div>
         </section>
     </main>
-
+    
     <!-- COPYRIGHT FOOTER -->
     <footer class="footer">
         <p>&copy; <span id="year"></span> <span class="highlight">Muhammad Sharjeel</span>. All rights reserved. Designed with passion for AI & Innovation</p>

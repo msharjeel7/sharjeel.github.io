@@ -75,9 +75,9 @@ function connectParticles() {
             const dx = particles[i].x - particles[j].x;
             const dy = particles[i].y - particles[j].y;
             const distance = Math.sqrt(dx * dx + dy * dy);
-            if (distance < 150) { // Ye number kam karo = kam lines, zyada karo = zyada lines
+            if (distance < 150) { // lower = fewer connecting lines, higher = more lines
                 ctx.strokeStyle = `rgba(255, 215, 0, ${1 - distance / 100})`;
-                ctx.lineWidth = 0.5; // Ye number kam karo = patli lines, zyada karo = moti lines
+                ctx.lineWidth = 0.5; // lower = thinner lines, higher = thicker lines
                 ctx.beginPath();
                 ctx.moveTo(particles[i].x, particles[i].y);
                 ctx.lineTo(particles[j].x, particles[j].y);
@@ -187,3 +187,34 @@ document.querySelectorAll('section').forEach(section => {
 init();
 animate();
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Skills network - interactive node/panel switching
+const skillNodes = document.querySelectorAll('.skill-node');
+const skillPanels = document.querySelectorAll('.skills-panel-inner');
+const skillsPanel = document.querySelector('.skills-panel');
+const panelArrow = document.querySelector('.skills-panel-arrow');
+
+function positionSkillArrow() {
+    const activeNode = document.querySelector('.skill-node.active');
+    if (!activeNode || !panelArrow || !skillsPanel) return;
+
+    const panelRect = skillsPanel.getBoundingClientRect();
+    const nodeRect = activeNode.getBoundingClientRect();
+    const offset = nodeRect.left + nodeRect.width / 2 - panelRect.left;
+    const clamped = Math.max(24, Math.min(panelRect.width - 24, offset));
+    panelArrow.style.left = `${clamped}px`;
+}
+
+function activateSkillNode(target) {
+    skillNodes.forEach(node => node.classList.toggle('active', node.dataset.target === target));
+    skillPanels.forEach(panel => panel.classList.toggle('active', panel.dataset.panel === target));
+    positionSkillArrow();
+}
+
+skillNodes.forEach(node => {
+    node.addEventListener('click', () => activateSkillNode(node.dataset.target));
+});
+
+window.addEventListener('resize', positionSkillArrow);
+window.addEventListener('load', positionSkillArrow);
+positionSkillArrow();
